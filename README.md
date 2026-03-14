@@ -4,7 +4,7 @@ This project generates `lmgr326b.dll`, a drop-in replacement .dll for the Metrow
 
 ## Overview
 
-While using ghidra/gdb to try and understand the compiler's decision making process, I found what looked to be dormant debugging code surrounding its IR optimizer and PPC code generator and tried to find information on it. While looking a significantly newer version (7.0) of MWCC's decompiled [source code](https://git.wuffs.org/MWCC/) targeting `MSL_MacOS`, maintained by Ninji (shoutouts to furries), I saw that there was debugging functionality behind a compiler option `debug_listing` and debugging guards (`CW_ENABLE_IRO_DEBUG`, `CW_ENABLE_PCODE_DEBUG`) surrounding the code that it enabled.
+While using ghidra/gdb to try and understand the compiler's decision making process, I found what looked to be dormant debugging code surrounding its IR optimizer and PPC code generator and tried to find information on it. While looking at a significantly newer version (7.0) of MWCC's decompiled [source code](https://git.wuffs.org/MWCC/) targeting `MSL_MacOS`, maintained by Ninji (shoutouts to furries), I saw that there was debugging functionality behind a compiler option `debug_listing` and debugging guards (`CW_ENABLE_IRO_DEBUG`, `CW_ENABLE_PCODE_DEBUG`) surrounding the code that it enabled.
 
 I wanted to know if similar functionality existed in the compiler used for the Super Smash Brothers Melee decomp project. Amazingly, it did seemingly exist when looking for data related to it in the binary, however when trying `#pragma debuglisting on` it didn't have any meaninful output. Ghidra and gdb to the rescue.
 

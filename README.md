@@ -48,7 +48,7 @@ After enabling `debuglisting`, the IR optimizer's decisions for each compiled fu
 
 All numbers in this section are IR node ids, internal identifying information for statements / expressions in the compiler's intermediate representation. They are not line numbers or instruction offsets.
 
-### PPC backend output
+# PPC backend output
 
 The backend output consists of 9 passes per function showing the PPC code at each stage of the backend. Each pass dumps every basic block with successors, predecessors, labels, flags, and loop weight, followed by each instruction with full operand formatting.
 
